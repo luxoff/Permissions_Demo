@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">Permissions Demo</string>
+    <string name="access_fine_location">Access Fine Location:</string>
+    <string name="answer_phone_calls">Answer Phone Calls:</string>
+    <string name="camera_permission">Camera Permission:</string>
+    <string name="read_sms_permission">Read SMS Permission:</string>
+    <string name="grant_access_fine_location">Grant Access Fine Location</string>
+    <string name="grant_answer_phone_calls">Grant Answer Phone Calls</string>
+    <string name="grant_camera_permission">Grant Camera Permission</string>
+    <string name="grant_read_sms">Grant Read SMS</string>
+    <string name="grant_all">Grant all the Ungranted Permissions</string>
 </resources>
