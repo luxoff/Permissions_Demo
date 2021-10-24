@@ -9,4 +9,6 @@
     <string name="grant_camera_permission">Grant Camera Permission</string>
     <string name="grant_read_sms">Grant Read SMS</string>
     <string name="grant_all">Grant all the Ungranted Permissions</string>
+    <string name="granted">Granted</string>
+    <string name="not_granted">Not Granted</string>
 </resources>

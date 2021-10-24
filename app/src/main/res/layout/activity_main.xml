@@ -16,7 +16,7 @@
         android:layout_marginBottom="20dp"
         android:text="@string/access_fine_location"
         android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@id/tv_answer_phone_calls"
+        app:layout_constraintBottom_toTopOf="@id/tv_phone_calls"
         app:layout_constraintEnd_toStartOf="@id/tv_status_access_fine_location"
         app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintStart_toStartOf="parent"
@@ -29,16 +29,16 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
         android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@id/tv_status_answer_phone_calls"
+        app:layout_constraintBottom_toTopOf="@id/tv_status_phone_calls"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/tv_access_fine_location"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_chainStyle="packed"
-        tools:text="Not Granted"
-        tools:textColor="@color/red" />
+        android:text="@string/not_granted"
+        android:textColor="@color/red" />
 
     <TextView
-        android:id="@+id/tv_answer_phone_calls"
+        android:id="@+id/tv_phone_calls"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="50dp"
@@ -46,23 +46,23 @@
         android:text="@string/answer_phone_calls"
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@id/tv_camera_permission"
-        app:layout_constraintEnd_toStartOf="@id/tv_status_answer_phone_calls"
+        app:layout_constraintEnd_toStartOf="@id/tv_status_phone_calls"
         app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tv_access_fine_location" />
 
     <TextView
-        android:id="@+id/tv_status_answer_phone_calls"
+        android:id="@+id/tv_status_phone_calls"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@id/tv_status_camera_permission"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/tv_answer_phone_calls"
+        app:layout_constraintStart_toEndOf="@id/tv_phone_calls"
         app:layout_constraintTop_toBottomOf="@id/tv_status_access_fine_location"
-        tools:text="Not Granted"
-        tools:textColor="@color/red" />
+        android:text="@string/not_granted"
+        android:textColor="@color/red" />
 
     <TextView
         android:id="@+id/tv_camera_permission"
@@ -76,7 +76,7 @@
         app:layout_constraintEnd_toStartOf="@id/tv_status_camera_permission"
         app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tv_answer_phone_calls" />
+        app:layout_constraintTop_toBottomOf="@id/tv_phone_calls" />
 
     <TextView
         android:id="@+id/tv_status_camera_permission"
@@ -87,9 +87,9 @@
         app:layout_constraintBottom_toTopOf="@id/tv_status_read_sms"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/tv_camera_permission"
-        app:layout_constraintTop_toBottomOf="@id/tv_status_answer_phone_calls"
-        tools:text="Not Granted"
-        tools:textColor="@color/red" />
+        app:layout_constraintTop_toBottomOf="@id/tv_status_phone_calls"
+        android:text="@string/not_granted"
+        android:textColor="@color/red" />
 
     <TextView
         android:id="@+id/tv_read_sms"
@@ -109,12 +109,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@id/btn_grant_answer_phone_calls"
+        app:layout_constraintBottom_toTopOf="@id/btn_grant_call_phone"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/tv_read_sms"
         app:layout_constraintTop_toBottomOf="@id/tv_status_camera_permission"
-        tools:text="Not Granted"
-        tools:textColor="@color/red" />
+        android:text="@string/not_granted"
+        android:textColor="@color/red" />
 
     <Button
         android:id="@+id/btn_grant_access_fine_location"
@@ -122,13 +122,13 @@
         android:layout_height="60dp"
         android:layout_marginTop="30dp"
         android:text="@string/grant_access_fine_location"
-        app:layout_constraintEnd_toStartOf="@id/btn_grant_answer_phone_calls"
+        app:layout_constraintEnd_toStartOf="@id/btn_grant_call_phone"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_read_sms"
         app:layout_constraintBottom_toTopOf="@id/btn_grant_camera"/>
 
     <Button
-        android:id="@+id/btn_grant_answer_phone_calls"
+        android:id="@+id/btn_grant_call_phone"
         android:layout_width="180dp"
         android:layout_height="60dp"
         android:layout_marginTop="30dp"
@@ -155,7 +155,7 @@
         android:text="@string/grant_read_sms"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/btn_grant_camera"
-        app:layout_constraintTop_toBottomOf="@+id/btn_grant_answer_phone_calls"
+        app:layout_constraintTop_toBottomOf="@+id/btn_grant_call_phone"
         app:layout_constraintBottom_toBottomOf="parent"/>
 
     <Button
